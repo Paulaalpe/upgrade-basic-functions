@@ -27,5 +27,14 @@ function findLongestWord(param) {
     return elementoMasLargo;
 }
 
+/*Iteración #3: Calcular la suma
+Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz. */
+const numbers = [1, 2, 3, 5, 45, 37, 58];
 
-
+function sumAll(param) {
+    let total = 0;
+    for(let i =0; i< param.length; i++){
+      total += param[i];
+    };
+    return total;
+}
