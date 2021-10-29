@@ -29,7 +29,7 @@ function findLongestWord(param) {
 
 /*Iteración #3: Calcular la suma
 Implemente la función denominada sumNumbers que toma un array de números como argumento y devuelve la suma de todos los números de la matriz. */
-const numbers = [1, 2, 3, 5, 45, 37, 58];
+//const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 function sumAll(param) {
     let total = 0;
@@ -37,4 +37,14 @@ function sumAll(param) {
       total += param[i];
     };
     return total;
+}
+
+// Iteration#4 Calcular el promedio
+const numbers = [12, 21, 38, 5, 45, 37, 6];
+function average(param) {
+    let totalSuma = 0;
+    for(let i = 0; i <param.length; i++){
+      totalSuma += param[i];
+    };
+    return totalSuma / param.length;
 }
