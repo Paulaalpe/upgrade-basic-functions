@@ -48,3 +48,22 @@ function average(param) {
     };
     return totalSuma / param.length;
 }
+
+// Iteration#5 Promedio de strings Crea una función que reciba por parámetro un array y cuando es un valor number lo sume y de lo contrario cuente la longitud del string y lo sume. 
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+function averageWord(param) {
+
+    totalSuma = 0;
+    for(let i=0; i<param.length; i++){
+      if(typeof param[i] === "number"){
+        totalSuma += param[i];
+      } else { 
+        if (typeof param[i] === "string"){
+          totalSuma += param[i].length
+        };
+      }
+    };
+    return totalSuma;
+    // Nota: el ejercicio pide una suma pero el título del ejercicio y el nombre de la función aluden a un promedio. Si lo que se necesita es el promedio habría que sustituir "return totalSuma;" por "return totalSuma / param.length;"
+
+}
