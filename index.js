@@ -65,5 +65,29 @@ function averageWord(param) {
     };
     return totalSuma;
     // Nota: el ejercicio pide una suma pero el título del ejercicio y el nombre de la función aluden a un promedio. Si lo que se necesita es el promedio habría que sustituir "return totalSuma;" por "return totalSuma / param.length;"
-
 }
+
+/*Iteración #7: Buscador de nombres
+Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe dentro de dicho array - comprueba si existe el elemento, en caso que existan nos devuelve un true y la posición de dicho elemento y por la contra un false. */
+const nameFinder = [
+  'Peter',
+  'Steve',
+  'Tony',
+  'Natasha',
+  'Clint',
+  'Logan',
+  'Xabier',
+  'Bruce',
+  'Peggy',
+  'Jessica',
+  'Marc'
+];
+function finderName(param,valor) {
+  for(let i=0; i<param.length;i++) {
+    if(param[i]==valor){
+      return [true , i];
+    };
+  }
+  return [false];
+}
+// el return podría ser un string concatenando "true/false" con i
