@@ -67,6 +67,35 @@ function averageWord(param) {
     // Nota: el ejercicio pide una suma pero el título del ejercicio y el nombre de la función aluden a un promedio. Si lo que se necesita es el promedio habría que sustituir "return totalSuma;" por "return totalSuma / param.length;"
 }
 
+// Iteración #6: Valores únicos
+// Crea una función que reciba por parámetro un array y compruebe si existen elementos duplicados, en caso que existan los elimina para retornar un array sin los elementos duplicados. Puedes usar este array para probar tu función:
+
+const duplicates = [
+  'sushi',
+  'pizza',
+  'burger',
+  'potatoe',
+  'pasta',
+  'ice-cream',
+  'pizza',
+  'chicken',
+  'onion rings',
+  'pasta',
+  'soda'
+];
+function removeDuplicates(param) {
+  let temporal = [];
+  for (let i = 0; i < param.length; i++){
+      if (!temporal.includes(param[i])){
+        temporal.push(param[i]);
+      };
+      
+  }
+ return(temporal);
+  
+}
+removeDuplicates(duplicates);
+
 /*Iteración #7: Buscador de nombres
 Crea una función que reciba por parámetro un array y el valor que desea comprobar que existe dentro de dicho array - comprueba si existe el elemento, en caso que existan nos devuelve un true y la posición de dicho elemento y por la contra un false. */
 const nameFinder = [
@@ -91,3 +120,4 @@ function finderName(param,valor) {
   return [false];
 }
 // el return podría ser un string concatenando "true/false" con i
+
